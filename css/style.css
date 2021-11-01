@@ -1,0 +1,71 @@
+
+body{
+    position: fixed;
+    width: auto;
+    background-image: url('../img/mynewbg.png');
+    height:800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:0%;
+    background-position-y: 0%; 
+    -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+}
+
+section{
+    display: none;
+    position:fixed;
+    width: auto;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+     /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+   background-color: rgba(184, 183, 183, 0.549);
+}
+
+
+
+
+    .qrcode{
+        height: 190px;
+        width: 190px;
+        background-image: url('../img/popup.png'); 
+        background-size: cover;      
+        position: absolute;
+        top: 140px;
+        left: 55px;
+    }
+
+    .qrcode:hover{
+        animation: flip 0.6s linear;
+        height: 250px;
+        width: 250px;
+        top: 110px;
+        left: 25px;
+       
+    }
+
+
+
+
+@keyframes flip {
+    50%{
+        transform: rotateY(180deg);
+       
+    }
+    to {
+        transform: rotateY(360deg);
+        z-index: 12;
+     
+
+    }
+}
+
+
